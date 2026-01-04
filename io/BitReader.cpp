@@ -1,7 +1,7 @@
 #include "BitReader.h"
 
 BitReader::BitReader(std::ifstream &in):in(in),
-                    buffer(0),bitPos(0){}
+                    buffer(0),bitPos(8){}
 
 int BitReader::readBit(){
     if(bitPos==8){
